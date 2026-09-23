@@ -1,0 +1,19 @@
+{
+  "name": "automation",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "@wdio/appium-service": "^9.32.0",
+    "@wdio/cli": "^9.32.0",
+    "@wdio/globals": "^9.31.3",
+    "@wdio/local-runner": "^9.32.0",
+    "@wdio/mocha-framework": "^9.32.0",
+    "@wdio/spec-reporter": "^9.32.0",
+    "appium-uiautomator2-driver": "^8.7.0",
+    "expect-webdriverio": "^6.1.0"
+  },
+  "scripts": {
+    "test:mobile-login": "npx wdio run ./config/wdio.mobile.conf.ts --spec ./test/specs/mobile/loginWeMine.spec.ts",
+    "test:web-login": "npx wdio run ./config/wdio.web.conf.ts --spec ./test/specs/web/loginWeMineOffice.spec.ts"
+  }
+}
